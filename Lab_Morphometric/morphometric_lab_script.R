@@ -204,15 +204,15 @@ gpa.coords %>%
 # 
 
 # Make data doc -----------------------------------------------------------
-
+data2 <- NULL
 data2 <- data.frame(matrix(NA, nrow = 16*3*20, ncol = 7))
-colnames(data2) <- colnames(data)
+colnames(data2) <- c("Group", "Investigator", "Fish", "Measure", "Length", "X", "Y")
 data2$Measure <- rep(c("TL", "MEH", as.character(c(1:18))), times = 16*3)
 data2$Group <- c(rep(1:4, times = c(240,240,240, 240)))
 data2$Investigator <-c(rep(rep(1:4, times = c(60,60,60,60)), 4))
 data2$Fish <-c(rep(rep(c("Bass", "Salmon", "Trout"), times = c(20,20,20)), 16))
 
-write_csv(data2, "~/Downloads/class_data_sheet.csv")
+write_csv(x = data2, "~/Downloads/class_data.csv")
 
 # make completely fake data set
 fake.data <- read_csv("~/Downloads/Test data - Sheet1.csv")

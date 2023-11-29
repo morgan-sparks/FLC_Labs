@@ -68,8 +68,7 @@ navigating to Analyze\>Measure and window will pop up with your data
 ### Landmarks and semilandmarks
 
 The next step we will do is to measure Landmarks. Landmarks are fixed
-locations in morphometric analysis, so these are things like the middle
-of the eye, the start and ending location of dorsal fin, or where the
+locations (semi landmarks are places marks that can be moved, we'll use both) in morphometric analysis, so these are things like the middle of the eye, the start and ending location of dorsal fin, or where the
 caudal peduncal (body part of tail) transition into the caudal fin (tail
 fin).
 
