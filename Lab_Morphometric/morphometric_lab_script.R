@@ -11,8 +11,8 @@ data.length <- data[data$Measure == "TL" | data$Measure == "MEH", c(1:5)]
 ### variation in all measurements
 data.length %>% 
   group_by(Fish, Measure) %>% 
-  summarise(mean= mean(Length),
-            sd = sd(Length)) %>% 
+  summarise(mean= round(mean(Length), 2),
+            sd = round(sd(Length), 2)) %>% 
   kbl() %>% 
   kable_styling() 
 
@@ -33,8 +33,8 @@ data.length %>%
 data.length %>% 
   group_by(Group,Fish, Measure) %>% 
   filter(Measure == "MEH") %>% 
-  summarise(mean= mean(Length),
-            sd = sd(Length)) %>% 
+  summarise(mean= round(mean(Length), 2),
+            sd = round(sd(Length), 2)) %>% 
   kbl() %>% 
   kable_styling() 
 
@@ -45,7 +45,7 @@ data.length %>%
             sd = sd(Length)) %>%
   ungroup() %>% 
   ggplot(aes(x= Fish, y = mean, color = Group)) +
-  geom_point(data = data.length, aes(x= Fish, y = Length , color = as.character(Group)), alpha = 0.5, position=position_dodge(width=0.9)) +
+  geom_point(data = data.length, aes(x= Fish, y = Length , color = as.character(Group)), alpha = 0.5, position=position_dodge(width=0.9), size = 0.75) +
   geom_point(position=position_dodge(width=0.9)) +
   geom_errorbar(aes( ymin = mean-sd, ymax = mean + sd, color = Group),position=position_dodge(width=0.9)) +
   facet_wrap(~Measure) +

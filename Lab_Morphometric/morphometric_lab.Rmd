@@ -72,7 +72,7 @@ locations (semi landmarks are places marks that can be moved, we'll use both) in
 caudal peduncal (body part of tail) transition into the caudal fin (tail
 fin).
 
-We will take 18 landamarks according to those laid out in the provided
+We will take 18 landamarks and semilandmarks according to those laid out in the provided
 photo. It is **VERY IMPORTANT** you do this in the order of those
 landmarks laid out on the photo. If we don't our fish will look very
 weird to the computer program!

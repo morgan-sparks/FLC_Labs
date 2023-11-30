@@ -63,15 +63,16 @@ navigating to Analyze\>Measure and window will pop up with your data
 ### Landmarks and semilandmarks
 
 The next step we will do is to measure Landmarks. Landmarks are fixed
-locations in morphometric analysis, so these are things like the middle
-of the eye, the start and ending location of dorsal fin, or where the
+locations (semi landmarks are places marks that can be moved, we’ll use
+both) in morphometric analysis, so these are things like the middle of
+the eye, the start and ending location of dorsal fin, or where the
 caudal peduncal (body part of tail) transition into the caudal fin (tail
 fin).
 
-We will take 18 landamarks according to those laid out in the provided
-photo. It is **VERY IMPORTANT** you do this in the order of those
-landmarks laid out on the photo. If we don’t our fish will look very
-weird to the computer program!
+We will take 18 landamarks and semilandmarks according to those laid out
+in the provided photo. It is **VERY IMPORTANT** you do this in the order
+of those landmarks laid out on the photo. If we don’t our fish will look
+very weird to the computer program!
 
 To do this we will use to the tool we created with the macro which just
 requires you click on the photo wherever that landmark lays. You may set
